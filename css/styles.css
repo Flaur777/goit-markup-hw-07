@@ -856,11 +856,11 @@ p {
     transform: translate(-50%, -50%);
     
     padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 18px;
     
-    max-width: 408px;
+    max-width: 392px;
     max-height: 584px;
     width: 90%;
 
@@ -868,6 +868,14 @@ p {
     border-radius: 4px;
 
     overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 408px;
+    }
 }
 
 .modal-close-btn {
