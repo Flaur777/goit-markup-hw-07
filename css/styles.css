@@ -858,7 +858,7 @@ p {
     padding-top: 72px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 18px;
     
     max-width: 408px;
     max-height: 584px;
@@ -867,7 +867,7 @@ p {
     background-color: #FCFCFC;
     border-radius: 4px;
 
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .modal-close-btn {
@@ -995,7 +995,6 @@ p {
 .order-form-checkbox-container {
     display: flex;
     align-items: center;
-    gap: 8px;
 
     margin-top: 16px;
     margin-bottom: 24px;
