@@ -455,7 +455,10 @@ p {
     background-color: var(--dark-text-color);
     padding: 112px 0;
     
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/Retina/hero-mob@1x.webp);
+    
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1440px;
@@ -463,17 +466,52 @@ p {
 
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Retina/hero-mob@2x.webp);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .hero-section {
         padding-top: 112px;
         padding-bottom: 108px;
+      
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/Retina/hero-tab@1x.webp);
+    }
+    
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Retina/hero-tab@2x.webp);
+        }
     }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .hero-section {
         padding: 188px 0;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Retina/hero-desc@1x.webp);
     }
+
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+            .hero-section {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/Retina/hero-desc@2x.webp);
+            }
+        }
 }
 
 .hero-container {
